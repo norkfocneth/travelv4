@@ -98,7 +98,7 @@ const sectionVariants = {
 
 export default function Footer() {
   return (
-    <footer className="relative overflow-hidden">
+    <footer id="contact" className="relative overflow-hidden">
       {/* ─── Animated Wave SVG ─── */}
       <div className="relative w-full h-20 md:h-28 overflow-hidden">
         <svg
@@ -172,9 +172,32 @@ export default function Footer() {
                 </div>
               </div>
 
-              <p className="text-sm leading-relaxed text-[#0a0e27]/60 dark:text-white/50 mb-6 max-w-xs" style={{ fontFamily: "'Inter', sans-serif" }}>
+              <p className="text-sm leading-relaxed text-[#0a0e27]/60 dark:text-white/50 mb-5 max-w-xs" style={{ fontFamily: "'Inter', sans-serif" }}>
                 Your gateway to premium Asian travel experiences. Discover breathtaking destinations curated with luxury and authenticity.
               </p>
+
+              {/* Contact Info */}
+              <div className="flex flex-col gap-3.5 mb-6 text-sm text-[#0a0e27]/70 dark:text-white/60 font-sans">
+                <a href="mailto:astrepresentatives@gmail.com" className="flex items-center gap-2.5 hover:text-sky-600 dark:hover:text-sky-400 transition-colors w-fit">
+                  <svg className="w-4 h-4 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L22 8m-9 11h.01M21 16V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2h14a2 2 0 002-2z" />
+                  </svg>
+                  <span className="text-xs">astrepresentatives@gmail.com</span>
+                </a>
+                <a href="tel:+919560701993" className="flex items-center gap-2.5 hover:text-sky-600 dark:hover:text-sky-400 transition-colors w-fit">
+                  <svg className="w-4 h-4 text-sky-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.94.725l.548 2.2a1 1 0 01-.321.988l-1.305.98a10.582 10.582 0 004.872 4.872l.98-1.305a1 1 0 01.988-.321l2.2.548a1 1 0 01.725.94V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <span className="text-xs">+91 9560701993</span>
+                </a>
+                <div className="flex items-start gap-2.5 leading-relaxed text-[#0a0e27]/60 dark:text-white/50">
+                  <svg className="w-4 h-4 text-sky-500 mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                  <span className="text-[11px] leading-tight max-w-[200px]">H-50/A, Ground Floor Gali no - 3, Saurabh Vihar, Hari Nagar Extn, Badarpur, New Delhi 110044</span>
+                </div>
+              </div>
 
               {/* Social Icons */}
               <div className="flex items-center gap-3">
